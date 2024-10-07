@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-color: #181818;
 }
@@ -228,6 +230,7 @@ li a:hover {
         font-size: 32px;
     }
     nav {
+        
         width: 45%;
         left: 25%; 
         transform: translateX(-25%);
