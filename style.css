@@ -16,15 +16,10 @@ header {
     margin: 0 auto;
 }
 
-header {
-    padding-top: 40px;
-    position: relative;
-    
-}
-
 nav {
+    max-width: 1024px;
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 10px 20px;
     backdrop-filter: blur(20px);
     background-color: rgba(0, 0, 0, 0.089);
@@ -32,10 +27,12 @@ nav {
     border-radius: 100px;
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+    position: fixed; /* Change here */
+    top: 20px; /* Keeps it fixed at the top */
     z-index: 20;
-   
 }
+
 
 .logo img {
     margin: 0 auto;
@@ -232,6 +229,8 @@ li a:hover {
     }
     nav {
         width: 45%;
+        left: 25%; 
+        transform: translateX(-25%);
     }
     .logo img {
         margin: 0 auto;
