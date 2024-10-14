@@ -51,7 +51,7 @@ ul {
 
 li a {
     text-transform: uppercase;
-    color: #6b6b6b;
+    color: #cccccc;
     text-decoration: none;
     font-size: 20px;
     font-family: Rubik;
@@ -71,7 +71,6 @@ li a:hover {
     left: 50%; 
     transform: translateX(-50%);
 }
-
 
 .hero .content {
     position: absolute;
@@ -97,31 +96,6 @@ li a:hover {
     transform: translateX(-50%);
 }
 
-#aboutus {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.about-content {
-    width: 80%;
-}
-.about-content h1{
-    font-size: 40px;
-    color: #fff;
-    z-index: 10;
-    position: relative;
-    font-family: Rubik;
-}
-
-#aboutus img {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    z-index: 0;
-}
-
 #work {
     height: 100%;
 }
@@ -132,6 +106,8 @@ li a:hover {
     align-items: center;
     font-family: Rubik;
     color: #fff;
+    margin-top: 50px;
+
 }
 
 .content-work h1 {
