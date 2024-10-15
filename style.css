@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Rubik;
 }
 html {
     scroll-behavior: smooth;
@@ -12,12 +13,10 @@ body {
 header {
     height: 100vh;
 }
-
 .container {
     max-width: 1024px;
     margin: 0 auto;
 }
-
 nav {
     max-width: 1024px;
     width: 100%;
@@ -30,62 +29,58 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed; /* Change here */
-    top: 20px; /* Keeps it fixed at the top */
+    position: fixed; 
+    top: 20px;
     z-index: 20;
 }
-
-
 .logo img {
     margin: 0 auto;
     width: 120px;
     height: 50px;
 }
-
 ul {
     list-style: none;
     display: flex;
     gap: 30px;
     margin-left: 220px;
 }
-
 li a {
     text-transform: uppercase;
     color: #cccccc;
     text-decoration: none;
     font-size: 20px;
-    font-family: Rubik;
 }
-
 li a:hover {
     cursor: pointer;
     color: #fff; 
     transition: transform 0.3s, color 0.3s;
 }
-
-.hero .human img {
-    position: absolute;
-    bottom: 0;
-    z-index: 10;
-    max-height: 80%;
-    left: 50%; 
-    transform: translateX(-50%);
-}
-
 .hero .content {
-    position: absolute;
-    bottom: 0;
-    z-index: 10;
-    padding-bottom: 30px;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
-
-.content h1 {
+.hero .content h1 {
     color: #fff;
     font-size: 5vw;
-    text-transform: uppercase;
-    font-family: Rubik;
+    text-align: center;
 }
+.btn {
+    margin-top: 50px;
 
+}
+.btn a {
+    position: relative;
+    z-index: 90;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    border-radius: 50px;
+}
 .circle-gradient img{
     z-index: 0;
     position: absolute;
@@ -95,37 +90,26 @@ li a:hover {
     left: 50%; 
     transform: translateX(-50%);
 }
-
 #work {
     height: 100%;
 }
-
-.flex-Work {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Rubik;
-    color: #fff;
-    margin-top: 50px;
-
-}
-
 .content-work h1 {
     font-size: 80px;
 }
 .content-explore h1 {
+    color: #fff;
+    text-align: center;
     font-size: 96px;
 }
-.content-work p {
-    font-size: 32px;
+.work-content {
+    margin: 50px auto;
+
 }
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin: 120px 0;
     padding-top: 50px;
 }
-
 .card {
     flex: 0 0 33.33%; 
     padding: 10px;
@@ -135,44 +119,32 @@ li a:hover {
     width: 100%; 
     transition: transform 0.3s;
 }
-
 .card:hover .zoom-image {
     transform: scale(1.1); 
 }
-
 .card img {
     width: 100%; 
     height: auto; 
 }
-
 #contact {
     height: 10vh;
-}
-
-.flex-contact {
-    border-top: 2px solid #fff;
-    display: flex;
 }
 .touch {
     padding-bottom: 20px;
     text-align: center;
     color: #fff;
-    font-family: Rubik;
 }
 .flex-contact a {
     text-decoration: none;
-    font-family: Rubik;
     color: #fff;
     padding-left: 10px;
     padding: 30px 10px;
 }
-
 @media (max-width: 768px) {
     .card {
         flex: 0 0 50%; 
     }
 }
-
 @media (max-width: 480px) {
     .human img {
         width: 100%;
@@ -188,31 +160,18 @@ li a:hover {
         left: 50%; 
         transform: translateX(-50%);
     }
-    .content h1 {
-        font-size: 50px;
-    }
-    .about-content {
-        width: 100%;
-        padding: 20px;
-    }
-    .about-content h1{
-        font-size: 24px;
-    }
-    .content-work p {
-        font-size: 18px;
-        padding-left: 10px;
-    }
-    .content-explore h1 {
-        font-size: 32px;
-    }
     nav {
         
         width: 45%;
         left: 25%; 
         transform: translateX(-25%);
     }
+
     .logo img {
         margin: 0 auto;
+    }
+    .content-explore h1 {
+        font-size: 8vw;
     }
     ul li a {
         display: none;
@@ -220,5 +179,6 @@ li a:hover {
     .card {
         flex: 0 0 100%; 
     }
+
 }
 
