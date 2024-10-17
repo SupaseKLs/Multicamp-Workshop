@@ -1,186 +1,181 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Rubik;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
 }
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth; /* เวลาคลิกที่ตัว navbar จะลื่นขึ้น */
+}
 body {
-    background-color: #181818;
+  background-color: #181818;
 }
 header {
-    height: 100vh;
+  height: 100vh;
 }
 .container {
-    max-width: 1024px;
-    margin: 0 auto;
+  /* repsonsive  */
+  max-width: 1024px;
+  margin: 0 auto;
 }
 nav {
-    max-width: 1024px;
-    width: 100%;
-    margin: 30px auto;
-    padding: 10px 20px;
-    backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.089);
-    border: 2px solid #fff;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed; 
-    top: 20px;
-    z-index: 20;
+  max-width: 1024px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 10px 20px;
+  backdrop-filter: blur(20px); /* ทำให้ตัว nav เบลอ  */
+  background-color: rgba(0, 0, 0, 0.089);
+  border: 2px solid #fff;
+  border-radius: 100px;
+  display: flex; /* ปัดไปเป็นแนวนอน */
+  align-items: center; /* อยุ่กึ่งกลาง */
+  justify-content: space-between; /* แบ่งซ้ายขวาให้เท่ากัน */
+  position: fixed; /* จัดตำแหน่งให้อยู่ที่เดิมเวลาเลื่อน scroll */
+  top: 20px;
+  z-index: 20; /* จัดลำดับ layer */
 }
 .logo img {
-    margin: 0 auto;
-    width: 120px;
-    height: 50px;
+  margin: 0 auto; /* เซ็ตให้อยู่ตรงกลาง */
+  width: 120px;
+  height: 50px;
 }
 ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin-left: 220px;
+  list-style: none; /* ลบจุดออก */
+  display: flex;
+  gap: 30px; /* ปรับระยะห่างข้อง menu */
+  margin-left: 220px;
 }
 li a {
-    text-transform: uppercase;
-    color: #cccccc;
-    text-decoration: none;
-    font-size: 20px;
+  text-transform: uppercase; /* ทำให้ทุกตัวเป็นอักษรพิมใหญ่ */
+  color: #cccccc;
+  text-decoration: none; /* ลบที่ขีดเส้นใต้ */
+  font-size: 20px;
 }
 li a:hover {
-    cursor: pointer;
-    color: #fff; 
-    transition: transform 0.3s, color 0.3s;
+  cursor: pointer; /* เมื่อเอาเม้าส์ไปวางจะเป็นรูปมือ */
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
 }
 .hero .content {
-    height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   z-index: 10;
+  height: 100vh;
+  display: flex;/* ไล่เป็นแนวนอน */
+  flex-direction: column; /* ปรับมาเป็นแนวตั้ง */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 .hero .content h1 {
-    color: #fff;
-    font-size: 5vw;
-    text-align: center;
+  color: #fff;
+  font-size: 5vw;
+  text-align: center;
 }
 .btn {
-    margin-top: 50px;
-
+  margin-top: 50px;
 }
 .btn a {
-    position: relative;
-    z-index: 90;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 24px;
-    border: 2px solid #fff;
-    text-decoration: none;
-    border-radius: 50px;
+  position: relative;
+  z-index: 90;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff; /* เส้นกรอบทึบ */
+  text-decoration: none;
+  border-radius: 50px; /* เส้นโค้ง */
 }
-.circle-gradient img{
+.circle-gradient img {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 490px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#work {
+  height: 100%;
+}
+.content-work h1 {
+  font-size: 80px;
+}
+.content-explore h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 96px;
+}
+.work-content {
+  margin: 50px auto;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* ถ้าพื้นที่ไม่พอจะขึ้นบรรทัดใหม่เวลาย่อขนาด */
+  padding-top: 50px;
+}
+.card {
+  flex: 0 0 33.33%; /* แบ่งให้เท่ากัน 33.33 เท่ากับ 3 การ์ด */
+  padding: 10px;
+  box-sizing: border-box;
+}
+.zoom-image {
+  width: 100%;
+  transition: transform 0.3s;
+}
+.card:hover .zoom-image {
+  transform: scale(1.1); /* เมื่อเอาเม้าส์ไปวางจะขยายภาพใน scale card  */
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+#contact {
+  height: 10vh;
+}
+.touch {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+.flex-contact a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 10px;
+  padding: 30px 10px;
+}
+@media (max-width: 768px) { /* สไตล์สำหรับหน้าจอที่น้อยกว่า 768px */
+  .card {
+    flex: 0 0 50%; /* card จะแบ่งให้เท่ากัน 50% = 2 card */ 
+  }
+}
+@media (max-width: 480px) { /* สไตล์สำหรับหน้าจอที่น้อยกว่า 480px */
+  .human img {
+    width: 100%;
+    height: 490px;
+  }
+  .circle-gradient img {
     z-index: 0;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 490px;
-    left: 50%; 
+    left: 50%;
     transform: translateX(-50%);
-}
-#work {
-    height: 100%;
-}
-.content-work h1 {
-    font-size: 80px;
-}
-.content-explore h1 {
-    color: #fff;
-    text-align: center;
-    font-size: 96px;
-}
-.work-content {
-    margin: 50px auto;
+  }
+  nav {
+    width: 45%;
+    left: 25%;
+    transform: translateX(-25%);
+  }
 
+  .logo img {
+    margin: 0 auto;
+  }
+  .content-explore h1 {
+    font-size: 8vw;
+  }
+  ul li a {
+    display: none;
+  }
+  .card { 
+    flex: 0 0 100%; /* card จะแบ่งให้เท่ากัน 100% = 1 card */ 
+  }
 }
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 50px;
-}
-.card {
-    flex: 0 0 33.33%; 
-    padding: 10px;
-    box-sizing: border-box; 
-}
-.zoom-image {
-    width: 100%; 
-    transition: transform 0.3s;
-}
-.card:hover .zoom-image {
-    transform: scale(1.1); 
-}
-.card img {
-    width: 100%; 
-    height: auto; 
-}
-#contact {
-    height: 10vh;
-}
-.touch {
-    padding-bottom: 20px;
-    text-align: center;
-    color: #fff;
-}
-.flex-contact a {
-    text-decoration: none;
-    color: #fff;
-    padding-left: 10px;
-    padding: 30px 10px;
-}
-@media (max-width: 768px) {
-    .card {
-        flex: 0 0 50%; 
-    }
-}
-@media (max-width: 480px) {
-    .human img {
-        width: 100%;
-        height: 490px;
-        
-    }
-    .circle-gradient img{
-        z-index: 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 490px;
-        left: 50%; 
-        transform: translateX(-50%);
-    }
-    nav {
-        
-        width: 45%;
-        left: 25%; 
-        transform: translateX(-25%);
-    }
-
-    .logo img {
-        margin: 0 auto;
-    }
-    .content-explore h1 {
-        font-size: 8vw;
-    }
-    ul li a {
-        display: none;
-    }
-    .card {
-        flex: 0 0 100%; 
-    }
-
-}
-

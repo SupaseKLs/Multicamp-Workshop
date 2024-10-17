@@ -1,144 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-            />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- import Font -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- import animation aos  -->
+</head>
 
-    <body>
-        <!-- Header -->
-        <header id="home">
-            <div class="container">
-                <!-- nav -->
-                <nav data-aos="fade-up"
-                    data-aos-anchor-placement="center-center">
-                    <div class="logo">
-                        <a href="#home">
-                            <img src="./assets/img/logo.png" alt="">
+<body>
+    <!-- Header -->
+    <header id="home">
+        <div class="container">
+            <!-- nav -->
+            <nav data-aos="fade-up" data-aos-anchor-placement="center-center"> <!-- animation -->
+                <div class="logo">
+                    <a href="#home"> <!-- ใช้ #home เพื่อ เวลาเราคลิกจะเลื่อนไปที่ส่วนของ id ที่ชื่อ home -->
+                        <img src="./assets/img/logo.png" alt=""> <!-- ดึง logo ภาพเข้ามา -->
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hero -->
+            <div class="hero">
+                <div class="content">
+                    <h1>I'm Supasek</h1>
+                    <h1>Front-End Developer</h1>
+                    <div class="btn">
+                        <a href="#work">Click to Works</a>
+                    </div>
+                </div>
+
+                <div class="circle-gradient"> <!-- ใช้ภาพทำ gradient -->
+                    <img src="./assets/img/gradient.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Work -->
+    <section id="work">
+        <div class="container">
+            <div class="work-content">
+                <div class="content-explore">
+                    <h1>Explore My Work</h1>
+                </div>
+
+                <!-- Cards -->
+                <div class="cards">
+                    <div class="card" data-aos="fade-up">
+                        <a href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
+                            target="_blank">
+                            <img src="./assets/img/p1.png" class="zoom-image" alt="work">
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#work">Project</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Hero -->
-                <div class="hero">
-                    <div class="content">
-                        <h1>I'm Supasek</h1>
-                        <h1>Front-End Developer</h1>
-                        <div class="btn">
-                            <a href="#work">Click to Works</a>
-                        </div>
+                    <div class="card" data-aos="fade-up">
+                        <!-- ใช้ tag a คลุม tag image เพราะจะได้คลิกภาพได้ -->
+                        <a href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
+                            target="_blank"> <!-- ให้ใช้ลิ้งก์พวกที่เก็บไว้นอกแพลตฟอร์มอื่นง่ายต่อการทำ -->
+                            <img src="./assets/img/p2.png" class="zoom-image" alt="work">
+                        </a>
                     </div>
-
-                    <div class="circle-gradient">
-                        <img src="./assets/img/gradient.png" alt="">
+                    <div class="card" data-aos="fade-up">
+                        <a href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
+                            target="_blank">
+                            <img src="./assets/img/p3.png" class="zoom-image" alt="work">
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <a href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
+                            target="_blank">
+                            <img src="./assets/img/p4.png" class="zoom-image" alt="work">
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <a href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
+                            target="_blank">
+                            <img src="./assets/img/p5.png" class="zoom-image" alt="work">
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <a href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
+                            target="_blank">
+                            <img src="./assets/img/p6.png" class="zoom-image" alt="work">
+                        </a>
                     </div>
                 </div>
-
             </div>
-        </header>
 
-        <!-- Work -->
-        <section id="work">
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h1 class="touch">CONTACT</h1>
+        <div class="border-contact">
             <div class="container">
-                <div class="work-content">
-                    <div class="content-explore">
-                        <h1>Explore My Work</h1>
-                    </div>
-    
-                    <!-- Cards -->
-                    <div class="cards">
-                        <div class="card" data-aos="fade-up">
-                            <a
-                                href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
-                                target="_blank">
-                                <img src="./assets/img/p1.png" class="zoom-image"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="card" data-aos="fade-up">
-                            <a
-                                href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
-                                target="_blank">
-                                <img src="./assets/img/p2.png" class="zoom-image"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="card" data-aos="fade-up">
-                            <a
-                                href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
-                                target="_blank">
-                                <img src="./assets/img/p3.png" class="zoom-image"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="card" data-aos="fade-up">
-                            <a
-                                href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
-                                target="_blank">
-                                <img src="./assets/img/p4.png" class="zoom-image"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="card" data-aos="fade-up">
-                            <a
-                                href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
-                                target="_blank">
-                                <img src="./assets/img/p5.png" class="zoom-image"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="card" data-aos="fade-up">
-                            <a
-                                href="https://www.behance.net/gallery/208395975/PayGuard-help-to-fraud-through-money-transfer"
-                                target="_blank">
-                                <img src="./assets/img/p6.png" class="zoom-image"
-                                    alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <div class="container">
-                <h1 class="touch">CONTACT</h1>
-                <div class="border-contact">
-                    <div class="container">
-                        <div class="flex-contact">
-                            <a
-                                href="https://www.facebook.com/multicampkmutt?locale=th_TH">Facebook</a>
-                            <a
-                                href="https://www.instagram.com/multicamp.kmutt/">Instagram</a>
-                        </div>
-                    </div>
+                <div class="flex-contact">
+                    <a href="https://www.facebook.com/multicampkmutt?locale=th_TH">Facebook</a> <!-- คลิกไป facebook -->
+                    <a href="https://www.instagram.com/multicamp.kmutt/">Instagram</a> <!-- คลิกไป ig -->
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
 
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- import animation aos -->
+    <script> 
+        // เรียก aos เพื่อใช้งานใน javascript
         AOS.init();
     </script>
-    </body>
+</body>
 
 </html>
